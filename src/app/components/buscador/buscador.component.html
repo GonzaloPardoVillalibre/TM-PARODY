@@ -1,0 +1,13 @@
+<h1>Buscando: {{termino}} </h1>
+
+<div class="row animated fadeIn fast" *ngIf="trabajadoresBuscados.length==0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados con el término: {{termino}}
+        </div>
+    </div>
+</div>
+
+<div class="card-columns animated fadeIn fast">
+    <app-miembro-tarjeta [worker]="foo" [index]="index[0]" *ngFor="let foo of trabajadoresBuscados"> </app-miembro-tarjeta>
+</div>

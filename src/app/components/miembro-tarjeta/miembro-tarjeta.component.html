@@ -1,0 +1,13 @@
+<div class="card animated fadeIn fast" style="display:100;">
+    <img [src]="worker.img" class="card-img-top " height="300px" width="150px" [alt]="worker.nombre">
+    <div class="card-body">
+        <h5 class="card-title">{{worker.nombre}}</h5>
+        <p class="card-text" *ngIf="worker.bio.length>=50">{{worker.bio |slice:0:50}}...</p>
+        <p class="card-text" *ngIf="50>=worker.bio.length">{{worker.bio}}</p>
+        <p class="card-text "><small class="text-muted ">{{worker.aparicion}}</small></p>
+        <button (click)="verTrabajador(index) " type="button " class="btn btn-outline-primary btn-outline-dark btn-block ">
+        Ver trapos sucios...
+      </button>
+        <!-- <a [routerLink]="[ '/trabajador', i] " class="btn btn-outline-primary ">Ver trapos suicios</a> -->
+    </div>
+</div>
