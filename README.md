@@ -1,6 +1,8 @@
 # TM-PARODY
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
+The meaning of these project is to improve my personal skills with angular by developing a friendly app about me and my friends.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
